@@ -1,0 +1,23 @@
+.button {
+  height: 200px;
+  width: 200px;
+  margin: 40vh auto;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #ffffff;
+  -webkit-box-shadow: 5px 5px 20px #d9d9d9, -5px -5px 20px #ffffff;
+          box-shadow: 5px 5px 20px #d9d9d9, -5px -5px 20px #ffffff;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+}
+
+.button:hover {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 0px #ffffff, 0px 0px 0px #ffffff, inset 20px 20px 60px #d9d9d9, inset -20px -20px 60px #ffffff;
+          box-shadow: 0px 0px 0px #ffffff, 0px 0px 0px #ffffff, inset 20px 20px 60px #d9d9d9, inset -20px -20px 60px #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

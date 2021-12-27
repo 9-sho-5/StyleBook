@@ -1,4 +1,4 @@
 .DS_Store
-./Neumorphism/Music_Player/src/img
-./Neumorphism/Music_Player/src/css/reset.css
-./Neumorphism/Music_Player/src/css/style.css.map
+img/
+**/reset.css
+**/style.css.map

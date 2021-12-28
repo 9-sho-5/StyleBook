@@ -1,0 +1,106 @@
+body{
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 30vh;
+}
+
+.card{
+    position: relative;
+    // top: 50%;
+    // left: 50%;
+    height: 350px;
+    width: 250px;
+    // border-radius: 50%;
+    // transform: translate(-50%, -50%);
+    /* 3Dにする宣言 */
+    transform-style: preserve-3d;
+    /* 奥行きの宣言 */
+    perspective: 600px;
+    transition: .8s;
+    &.flip .card-front{
+        transform: rotateY(-900deg);
+    }
+    &.flip .card-back{
+        transform: rotate(0);
+    }
+    &.red{
+        .card-front{
+            background-color: orange;
+        }
+        .card-back{
+            background-image: url(https://img.game8.jp/2216364/e82e33bebed47a64babbd272250a517d.png/show?1540444326), url(https://i.pinimg.com/originals/21/ca/38/21ca3809fa917c5568ffa3e8f336dda2.gif);
+        }
+    }
+    &.blue{
+        .card-front{
+            background-color: skyblue;
+        }
+        .card-back{
+            background-image: url(https://img.game8.jp/2216351/00747699ec8b72ae970e08c726034d64.png/show?1540444326), url(https://blogimg.goo.ne.jp/user_image/2f/f6/534bdace8420abb491d3b095fc079ed5.gif);
+        }
+    }
+    &.green{
+        .card-front{
+            background-color: greenyellow;
+        }
+        .card-back{
+            background-image: url(https://img.game8.jp/2216353/f3382d68e4a59ed6f549647f718add7a.png/show?1540444326), url(https://i.pinimg.com/originals/12/17/66/12176602ec8f269301c5c799a96000d9.gif);
+        }
+    }
+    .card-front, .card-back{
+        border-radius: 10px;
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    }
+    .card-front{
+        height: 100%;
+        width: 100%;
+        background-image: url(https://www.seikowatches.com/jp-ja/products/seikoselection/special/pokemon/assets/image/main_pb.png);
+        background-position: 50% 50%;
+        background-size: contain, fill;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        /* 背後の面を表示させるかの宣言 */
+        backface-visibility: hidden;
+        transform: rotateY(0deg);
+        transition: .8s;
+    }
+    
+    .card-back{
+        height: 100%;
+        width: 100%;
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        backface-visibility: hidden;
+        transform: rotateY(900deg);
+        transition: .8s;
+        color: #ffffff;
+        text-align: center;
+        h2{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            font-size: 26px;
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}

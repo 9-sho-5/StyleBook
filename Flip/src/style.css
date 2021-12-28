@@ -1,0 +1,84 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /* 3Dにする宣言 */
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  /* 奥行きの宣言 */
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.card:hover .card-front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card:hover .card-back {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.card .card-back, .card .card-front {
+  border-radius: 50%;
+}
+
+.card .card-front {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://www.seikowatches.com/jp-ja/products/seikoselection/special/pokemon/assets/image/main_pb.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  /* 背後の面を表示させるかの宣言 */
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.card .card-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #ffffff;
+  text-align: center;
+}
+
+.card .card-back h2 {
+  margin: 60% auto 35% auto;
+  font-size: 26px;
+}
+
+.card .card-back h2 span {
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */

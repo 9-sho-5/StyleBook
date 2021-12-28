@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+.container {
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+.box {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  &:first-child {
+    background: #f35588;
+  }
+  &:nth-child(2) {
+    background: #05dfd7;
+  }
+  &:nth-child(3) {
+    background: #75daad;
+  }
+  &:nth-child(4) {
+    background: #feb72b;
+  }
+  &:nth-child(5) {
+    background: #ff6f5e;
+  }
+  &:last-child {
+    background: #527318;
+}
+}

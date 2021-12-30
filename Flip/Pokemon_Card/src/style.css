@@ -98,8 +98,8 @@ body {
 .card .card-back {
   height: 100%;
   width: 100%;
-  background-position: 50% 50%;
-  background-size: contain;
+  background-position: 50% 50%, 50% -30%;
+  background-size: contain, cover;
   background-repeat: no-repeat;
   position: absolute;
   top: 0;

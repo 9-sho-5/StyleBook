@@ -1,0 +1,176 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+
+    transition: transform 0.25s;
+	will-change: transform;
+
+    &.main{
+        background-image: url(https://www.pokemon.co.jp/img/logo.png),url(https://lh3.googleusercontent.com/tlIBC-OoNcTiL7SXVcrCIG91xE_XVFzYyRKLouFq5NV7LYOznYyXI7ualBMV15H9L1eGWVGz5Co1GXqqgJYDZ-5sDY7QzPPeTID975gJ3PIpNMc=e365-w1259);
+        background-position: 50% 50%;
+        background-size: auto,cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.wrap{
+    height: 100%;
+    width: 100vw;
+    flex: none;
+    scroll-snap-align: center;
+    margin: auto !important;
+    &.gene1{
+        .card{
+            &.red{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2216159/5a22bc6a24316639db597cf5f034d97f.png/show?1540444217), url(https://i.pinimg.com/originals/21/ca/38/21ca3809fa917c5568ffa3e8f336dda2.gif);
+                }
+            }
+            &.blue{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2216175/748673e4ac051fd6cc20fc07a9c755a2.png/show?1540444218), url(https://blogimg.goo.ne.jp/user_image/2f/f6/534bdace8420abb491d3b095fc079ed5.gif);
+                }
+            }
+            &.green{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2216228/b55df8b8fe1da2b2a6078a68848c8493.png/show?1540444219), url(https://blogimg.goo.ne.jp/image/upload/f_auto,q_auto,t_image_sp_entry/v1/user_image/67/fa/ebcfa84d2c8620b76436e5c180187ffd.gif);
+                }
+            }
+        }
+    }
+    &.gene2{
+        .card{
+            &.red{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2216364/e82e33bebed47a64babbd272250a517d.png/show?1540444326), url(https://i.pinimg.com/originals/21/ca/38/21ca3809fa917c5568ffa3e8f336dda2.gif);
+                }
+            }
+            &.blue{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2216351/00747699ec8b72ae970e08c726034d64.png/show?1540444326), url(https://blogimg.goo.ne.jp/user_image/2f/f6/534bdace8420abb491d3b095fc079ed5.gif);
+                }
+            }
+            &.green{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2216353/f3382d68e4a59ed6f549647f718add7a.png/show?1540444326), url(https://blogimg.goo.ne.jp/image/upload/f_auto,q_auto,t_image_sp_entry/v1/user_image/67/fa/ebcfa84d2c8620b76436e5c180187ffd.gif);
+                }
+            }
+        }
+    }
+    &.gene3{
+        .card{
+            &.red{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2216468/846dc8c5b2416d8137fb18d90c36cd60.png/show?1540444400), url(https://i.pinimg.com/originals/21/ca/38/21ca3809fa917c5568ffa3e8f336dda2.gif);
+                }
+            }
+            &.blue{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2216479/9e32bd8901337c3e26a338d944f6d529.png/show?1540444401), url(https://blogimg.goo.ne.jp/user_image/2f/f6/534bdace8420abb491d3b095fc079ed5.gif);
+                }
+            }
+            &.green{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2216490/e99ed8659553d5482b26c507348afc6c.png/show?1540444401), url(https://blogimg.goo.ne.jp/image/upload/f_auto,q_auto,t_image_sp_entry/v1/user_image/67/fa/ebcfa84d2c8620b76436e5c180187ffd.gif);
+                }
+            }
+        }
+    }
+    &.gene4{
+        .card{
+            &.red{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2216669/9bbf8ab2db5200826a7c90b9d89864bc.png/show?1540444735), url(https://i.pinimg.com/originals/21/ca/38/21ca3809fa917c5568ffa3e8f336dda2.gif);
+                }
+            }
+            &.blue{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2216672/99e96e502880171fea0938c5398ec762.png/show?1540444735), url(https://blogimg.goo.ne.jp/user_image/2f/f6/534bdace8420abb491d3b095fc079ed5.gif);
+                }
+            }
+            &.green{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2216661/2d034a213aba5fe247fb912b3467e581.png/show?1540444735), url(https://blogimg.goo.ne.jp/image/upload/f_auto,q_auto,t_image_sp_entry/v1/user_image/67/fa/ebcfa84d2c8620b76436e5c180187ffd.gif);
+                }
+            }
+        }
+    }
+    &.gene5{
+        .card{
+            &.red{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2217429/a8769d9bda1f349721324479f08d1466.png/show?1540449213), url(https://i.pinimg.com/originals/21/ca/38/21ca3809fa917c5568ffa3e8f336dda2.gif);
+                }
+            }
+            &.blue{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2217435/08cf74750a05ce01d98b39806c0800fb.png/show?1540449213), url(https://blogimg.goo.ne.jp/user_image/2f/f6/534bdace8420abb491d3b095fc079ed5.gif);
+                }
+            }
+            &.green{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2217431/49d165bc43acd89324ef9356cd0bba2c.png/show?1540449213), url(https://blogimg.goo.ne.jp/image/upload/f_auto,q_auto,t_image_sp_entry/v1/user_image/67/fa/ebcfa84d2c8620b76436e5c180187ffd.gif);
+                }
+            }
+        }
+    }
+    &.gene6{
+        .card{
+            &.red{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2217681/e529de94a2959eb5e9a818850f97c915.png/show?1540450165), url(https://i.pinimg.com/originals/21/ca/38/21ca3809fa917c5568ffa3e8f336dda2.gif);
+                }
+            }
+            &.blue{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2217746/669839a82e026b57d86c14b2cc566be7.png/show?1540450166), url(https://blogimg.goo.ne.jp/user_image/2f/f6/534bdace8420abb491d3b095fc079ed5.gif);
+                }
+            }
+            &.green{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2217692/380ebfc4c942e30fe8c8774659483ef9.png/show?1540450165), url(https://blogimg.goo.ne.jp/image/upload/f_auto,q_auto,t_image_sp_entry/v1/user_image/67/fa/ebcfa84d2c8620b76436e5c180187ffd.gif);
+                }
+            }
+        }
+    }
+    &.gene7{
+        .card{
+            &.red{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2217804/824c84da586bc6c6ebcb0106cff426ae.png/show?1540450839), url(https://i.pinimg.com/originals/21/ca/38/21ca3809fa917c5568ffa3e8f336dda2.gif);
+                }
+            }
+            &.blue{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2217802/1c3f002a98507a226e2337751763f84f.png/show?1540450839), url(https://blogimg.goo.ne.jp/user_image/2f/f6/534bdace8420abb491d3b095fc079ed5.gif);
+                }
+            }
+            &.green{
+                .card-back{
+                    background-image: url(https://img.game8.jp/2217888/02113ad644d3034663d6759aa4ef89d7.png/show?1540450839), url(https://blogimg.goo.ne.jp/image/upload/f_auto,q_auto,t_image_sp_entry/v1/user_image/67/fa/ebcfa84d2c8620b76436e5c180187ffd.gif);
+                }
+            }
+        }
+    }
+}
+
+.card{
+    &.red{
+        .card-front{
+            background-color: orange;
+        }
+    }
+    &.blue{
+        .card-front{
+            background-color: skyblue;
+        }
+    }
+    &.green{
+        .card-front{
+            background-color: greenyellow;
+        }
+    }
+}

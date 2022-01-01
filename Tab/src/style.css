@@ -48,4 +48,42 @@
   height: 100%;
   width: 100%;
 }
+
+.content .info {
+  height: 100%;
+  width: 100%;
+}
+
+.content .info.green::before {
+  display: block;
+  content: "No.1";
+  height: 100%;
+  width: 100%;
+  background-image: url(https://img.game8.jp/2216228/b55df8b8fe1da2b2a6078a68848c8493.png/show?1540444219);
+  background-position: 50% 50%;
+  background-size: auto,cover;
+  background-repeat: no-repeat;
+}
+
+.content .info.red::before {
+  display: block;
+  content: "No.4";
+  height: 100%;
+  width: 100%;
+  background-image: url(https://img.game8.jp/2216159/5a22bc6a24316639db597cf5f034d97f.png/show?1540444217);
+  background-position: 50% 50%;
+  background-size: auto,cover;
+  background-repeat: no-repeat;
+}
+
+.content .info.blue::before {
+  display: block;
+  content: "No.7";
+  height: 100%;
+  width: 100%;
+  background-image: url(https://img.game8.jp/2216175/748673e4ac051fd6cc20fc07a9c755a2.png/show?1540444218);
+  background-position: 50% 50%;
+  background-size: auto,cover;
+  background-repeat: no-repeat;
+}
 /*# sourceMappingURL=style.css.map */

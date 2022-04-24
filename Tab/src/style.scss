@@ -1,0 +1,74 @@
+.container{
+    width: 800px;
+    height: 700px;
+    margin: 10vh auto;
+    border-radius: 10px;
+}
+
+.tab-wrap{
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    height: 70px;
+    .tab{
+        cursor: pointer;
+        width: 33.333%;
+        height: 40px;
+        border-radius: 10px 10px 0px 0px ;
+        &:last-child{
+            border-width: 3px;
+        }
+        &.selected{
+            height: 70px;
+        }
+        &.green{
+            background-color: greenyellow;
+        }
+        &.red{
+            background-color: orange;
+        }
+        &.blue{
+            background-color: skyblue;
+        }
+    }
+}
+
+.content{
+    background-color: bisque;
+    height: 100%;
+    width: 100%;
+    .info{
+        height: 100%;
+        width: 100%;
+        &.green::before{
+            display: block;
+            content: "No.1";
+            height: 100%;
+            width: 100%;
+            background-image: url(https://img.game8.jp/2216228/b55df8b8fe1da2b2a6078a68848c8493.png/show?1540444219);
+            background-position: 50% 50%;
+            background-size: auto,cover;
+            background-repeat: no-repeat;
+        }
+        &.red::before{
+            display: block;
+            content: "No.4";
+            height: 100%;
+            width: 100%;
+            background-image: url(https://img.game8.jp/2216159/5a22bc6a24316639db597cf5f034d97f.png/show?1540444217);
+            background-position: 50% 50%;
+            background-size: auto,cover;
+            background-repeat: no-repeat;
+        }
+        &.blue::before{
+            display: block;
+            content: "No.7";
+            height: 100%;
+            width: 100%;
+            background-image: url(https://img.game8.jp/2216175/748673e4ac051fd6cc20fc07a9c755a2.png/show?1540444218);
+            background-position: 50% 50%;
+            background-size: auto,cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
